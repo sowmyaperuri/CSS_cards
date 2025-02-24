@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card1</title>
+    <style> 
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Times New Roman', Times, serif;
+    } 
+
+     body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #010101; }
+
+
+     .custom-card {
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width: 350px;
+        max-width: 100%;
+        height: 300px;
+        background: #FFF;
+        border-radius: 20px;
+        transition: 0.5s;
+        box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    }
+
+     .custom-card:hover {
+        height: 400px;
+    }
+
+  .custom-card .img-box {
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 220px;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+   .custom-card:hover .img-box {
+        top: -100px;
+        scale: 0.75;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    }
+
+    .container .custom-card .img-box img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+   .custom-card .custom-content {
+        position: absolute;
+        width: 100%;
+        height: 35px;
+        padding: 10px 20px;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+ .custom-card:hover .custom-content {
+        top: 150px;
+        height: 250px;
+    }
+
+ .custom-card .custom-content a {
+        display:inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        background: #181818;
+        margin-top: 15px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    
+
+      
+    </style>
+</head>
+<body>
+    <body>
+        
+          <div class="custom-card">
+            <div class="img-box"><img src="data:image/jpeg;base64,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"></div>
+            <div class="custom-content">
+              <h2>pikachu</h2>
+              <p>Pikachu is one of the most iconic Pokémon.It is electric type pokemon.Signature Moves: Thunderbolt, Thunder Shock, Quick Attack, Iron Tail, Volt Tackle</p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+         
+      </body>
+      </html>
+      
+           

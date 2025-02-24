@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card4</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* margin: 0;
+            padding: 0; */
+        }
+        body{
+          
+            display: flex;
+            justify-content:center ;
+            /* align-items: center; */
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            text-align: center;
+            box-shadow: 0 10px 8px #000;
+}
+        .container{
+         width: 90%;
+         margin: 50px auto;
+        
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         width: 400px;
+         height: 300px;
+         flex-wrap: wrap;
+         gap: 20px;
+         padding: 20px;
+
+        }
+        .card{
+
+            background-color: #ffffff;
+            border-radius: 8px;
+             min-width: 200px;
+             box-shadow:3px 10px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card img{
+          
+            width:100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px; 
+            margin-bottom: 10px;
+        }
+        .card .content{
+        padding: 15px;    
+        }
+        .card .container h2{
+            font-size:larger;
+        }
+        
+        .button{
+            background-color: #221a1a;
+            color: white;
+            border-radius: 2%;
+            box-shadow: 0 2px 3px #221a1a;
+            position: relative;
+        }
+        
+        .button:hover{
+            background-color: #fdf6f6;
+            color: #000;
+            box-shadow: none;   
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card"><img src="https://images.nativeplanet.com/img/2017/08/18-1503033110-s1.jpg" alt="Sunset">
+
+    <div class="content">
+    <!-- <h2>Sunset</h2>  -->
+    <h1>Taj Mahal, Agra</h1> 
+    <p>The sun sets behind the magnificient monument,creating a captivating moment for onlookers.Every detail,from the sky to the birds returning to their nests,forms a memorable picture of the marble structure.</p> 
+   <button class="button">Explore</button>
+    </div>
+</div>
+</div>
+</body>
+</html>
